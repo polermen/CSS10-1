@@ -249,6 +249,7 @@ header {
     position: absolute;
     top: 530px;
     left: 158px;
+    z-index: -1;
 }
 
 .line {
@@ -418,7 +419,7 @@ header {
 .second-boxes {
     display: flex;
     align-items: flex-start;
-    gap: 9px;
+    gap: 8px;
     align-self: stretch;
     flex-direction: row;
 }
@@ -1035,7 +1036,97 @@ footer {
 }
 
 @media screen and (min-width: 768px) and (max-width:1023px) {
+    body {
 
+    }
+    header {
+        display: flex;
+        padding: 24px 32px;
+        flex-direction: reverse;
+        align-items: flex-end;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+    .header-buttons {
+        margin-left: auto;
+    }
+    #planet {
+        width: 768px;
+        height: 338px;
+        left: 0%;
+        top: 64%;
+    }
+    .header-container {
+        max-width: 704px;;
+    }
+    .first-container {
+        max-width: 704px;
+        flex-wrap: wrap;
+    }
+    .first-boxes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .first-box:last-child {
+        margin-top: 84px;
+    }
+    .third-container {
+        flex-direction: column-reverse;
+        max-width: 704px;
+        align-items: center;
+    }
+    .third-text {
+        align-items: center;
+    }
+    .third-phone img:last-child {
+        top: 490px;
+        left: 115px;
+    }
+    .fourth-text {
+        max-width: 704px;
+        padding: 48px 32px 0px 32px;
+        text-align: left;
+    }
+    .galaxy {
+        width: 704px;
+        height: 536px;
+    }
+    .fifth-container {
+        max-width: 704px;
+    }
+    .fifth-boxes {
+        flex-direction: row;
+        gap: 16px 40px;
+        flex-wrap: wrap;
+        max-width: 704px;
+        justify-content: center;
+        height: 100%;
+        align-self: stretch;
+    }
+    .fifth-box-bottom {
+        margin: 0;
+    }
+
+    .sixth-container {
+        max-width: 704px;
+        max-height: unset;
+        height: 779px;
+    }
+    .sixth-text {
+        max-height: 394px;
+    }
+    .diamondo {
+        width: 592px;
+        height: 466px;
+        top: 313px;
+        left: 112px;
+    }
+    footer {
+        max-width: 768px;
+        width: 100%;
+        padding: 40px 32px;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 767px) {
