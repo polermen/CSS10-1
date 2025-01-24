@@ -1127,6 +1127,53 @@ footer {
         padding: 40px 32px;
         margin: 0 auto;
     }
+    .phone-box:nth-of-type(1) {
+        left: 58px;
+    }
+    
+    .phone-box:nth-of-type(2) {
+        top: 172px;
+        left: 12px;
+    }
+    
+    .phone-box:nth-of-type(3) {
+        top: 348px;
+        left: 12px;
+    }
+    
+    .phone-box:nth-of-type(4) {
+        top: 594px;
+        left: 12px;
+    }
+    
+    .phone-box:nth-of-type(5) {
+        top: 19px;
+        left: 369px;
+    }
+    
+    .phone-box:nth-of-type(6) {
+        top: 215px;
+        left: 484px;
+    }
+    
+    .phone-box:nth-of-type(7) {
+        top: 412px;
+        left: 425px;
+    }
+    
+    .phone-box:nth-of-type(8) {
+        top: 609px;
+        left: 453px;
+    }
+    .phone > img:first-of-type {
+        position: absolute;
+        left: 211px;
+    }
+
+    .seventh-container {
+        height: 785px;
+        padding: 0px 32px;
+    }
 }
 
 @media screen and (max-width: 767px) {
