@@ -7,7 +7,6 @@
 body {
     display: flex;
     flex-direction: column;
-    max-width: 1440px;
     width: 100%;
     background: #050109;
     gap: 96px;
@@ -25,6 +24,7 @@ button:hover {
     position: absolute;
     left: 712px;
     z-index: -1;
+    display: none;
 }
 
 .firstblur {
@@ -35,7 +35,6 @@ button:hover {
 
 header {
     display: flex;
-    max-width: 1440px;
     width: 100%;
     padding: 24px 196px;
     justify-content: space-between;
@@ -197,7 +196,7 @@ header {
     gap: 71px;
     align-items: center;
     position: relative;
-    max-width: 1440px;
+
     width: 100%;
 }
 
@@ -250,6 +249,8 @@ header {
     top: 530px;
     left: 0px;
     z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .line {
@@ -459,7 +460,7 @@ header {
 
 footer {
     display: flex;
-    max-width: 1440px;
+
     width: 100%;
     padding: 40px 200px;
     justify-content: space-between;
@@ -602,7 +603,6 @@ footer {
 }
 
 .fourth-container {
-    max-width: 1440px;;
     width: 100%;
     background: #10121B;
     height: 644px;
@@ -1038,8 +1038,30 @@ footer {
 .yap {
     display: none;
 }
+#linephone {
+    display: none;
+}
+#planetphone {
+    display: none;
+}
 
 @media screen and (min-width: 768px) and (max-width:1023px) {
+    #linephone {
+        display: none;
+    }
+    #planetphone {
+        display: none;
+    }
+    #help {
+        display: none;
+    }
+    .line img {
+        max-width: 768px;
+        width: 100%;
+    }
+    .secondblur {
+        display: none;
+    }
     header {
         display: flex;
         padding: 24px 32px;
@@ -1054,11 +1076,12 @@ footer {
     #planet {
         width: 768px;
         height: 338px;
-        left: 0%;
+        left: 50%;
+        transform: translateX(-50%);
         top: 64%;
     }
     .header-container {
-        max-width: 704px;;
+        max-width: 704px;
     }
     .first-container {
         max-width: 704px;
@@ -1179,7 +1202,6 @@ footer {
 
 @media screen and (max-width: 767px) {
     body {
-        max-width: 100vw;
         width: 100%;
         gap: 64px;
     }
@@ -1191,6 +1213,7 @@ footer {
             gap: 16px;
             flex-wrap: wrap;
             padding: 24px 16px;
+            width: 100%;
         }
         .header {
             padding: 0px 16px;
@@ -1485,5 +1508,23 @@ line-height: 24px; /* 150% */
         .footer-links-one, .footer-links-two, .footer-socials {
             justify-content: center;
             align-items: center;
+        }
+        .line {
+            display: none;
+        }
+        #planet {
+            display: none;
+        }
+        #help {
+            display: none;
+        }
+        .secondblur, .firstblur {
+            display: none;
+        }
+        #linephone {
+            display: block;
+        }
+        #planetphone {
+            display: block;
         }
 }
